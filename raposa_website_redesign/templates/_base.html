@@ -19,10 +19,10 @@
     <!-- Navigation bar -->
 
     <nav
-      class="fixed top-0 left-0 z-20 w-full border-b border-gray-200 bg-white px-2 py-4 dark:border-gray-600 dark:bg-gray-900 sm:px-4">
+      class="fixed top-0 left-0 z-20 w-full bg-primary-50/75 px-2 py-4 backdrop-blur-md dark:border-gray-600 dark:bg-gray-900 sm:px-4">
       <div
-        class="container mx-auto flex flex-wrap items-center justify-between">
-        <a href="https://raposa.trade/" class="flex items-center">
+        class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
+        <a href="/" class="flex items-center">
           <svg
             class="mr-2 h-9 text-primary-500"
             width="45"
@@ -56,20 +56,10 @@
             >Raposa</span
           >
         </a>
-        <div class="flex items-center gap-8 md:order-2">
-          <a
-            href="#"
-            class="block rounded py-2 pr-4 pl-3 text-base font-medium text-gray-700 hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-primary-500 md:dark:hover:bg-transparent md:dark:hover:text-white"
-            >Log in</a
-          >
-          <a
-            href="#"
-            class="block rounded py-2 pr-4 pl-3 text-base font-medium text-gray-700 hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-primary-500 md:dark:hover:bg-transparent md:dark:hover:text-white"
-            >Sign up</a
-          >
+        <div class="flex items-center gap-2 md:order-2">
           <button
             type="button"
-            class="mr-3 rounded-lg bg-primary-500 px-5 py-2.5 text-center text-sm font-medium text-white transition duration-300 ease-in-out hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-500 dark:hover:bg-primary-500 dark:focus:ring-primary-800 md:mr-0">
+            class="mr-2 rounded-lg bg-gray-800 px-5 py-2.5 text-center text-sm font-medium text-white transition duration-300 ease-in-out hover:bg-primary-500 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-500 dark:hover:bg-primary-500 dark:focus:ring-primary-800 md:mr-0">
             Try for free
           </button>
           <button
@@ -96,33 +86,47 @@
           class="hidden w-full items-center justify-between md:order-1 md:flex md:w-auto"
           id="navbar-sticky">
           <ul
-            class="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:text-sm md:font-medium md:dark:bg-gray-900">
+            class="mt-4 flex flex-col rounded-lg border border-gray-100 p-4 dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:text-sm md:font-medium md:dark:bg-gray-900">
             <li>
               <a
                 href="#"
-                class="block rounded py-2 pr-4 pl-3 text-base text-gray-700 hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-primary-500 md:dark:hover:bg-transparent md:dark:hover:text-white"
+                class="block rounded py-2 pr-4 pl-3 text-base text-gray-700 transition-colors duration-300 ease-in-out hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-primary-500 md:dark:hover:bg-transparent md:dark:hover:text-white"
                 >Pricing</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block rounded py-2 pr-4 pl-3 text-base text-gray-700 hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-primary-500 md:dark:hover:bg-transparent md:dark:hover:text-white"
+                class="block rounded py-2 pr-4 pl-3 text-base text-gray-700 transition-colors duration-300 ease-in-out hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-primary-500 md:dark:hover:bg-transparent md:dark:hover:text-white"
                 >Blog</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block rounded py-2 pr-4 pl-3 text-base text-gray-700 hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-primary-500 md:dark:hover:bg-transparent md:dark:hover:text-white"
+                class="block rounded py-2 pr-4 pl-3 text-base text-gray-700 transition-colors duration-300 ease-in-out hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-primary-500 md:dark:hover:bg-transparent md:dark:hover:text-white"
                 >Tutorials</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block rounded py-2 pr-4 pl-3 text-base text-gray-700 hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-primary-500 md:dark:hover:bg-transparent md:dark:hover:text-white"
+                class="block rounded py-2 pr-4 pl-3 text-base text-gray-700 transition-colors duration-300 ease-in-out hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-primary-500 md:dark:hover:bg-transparent md:dark:hover:text-white"
                 >Strategy Builder</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block rounded py-2 pr-4 pl-3 text-base text-gray-700 transition-colors duration-300 ease-in-out hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-primary-500 md:dark:hover:bg-transparent md:dark:hover:text-white"
+                >Sign up</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block rounded py-2 pr-4 pl-3 text-base text-gray-700 transition-colors duration-300 ease-in-out hover:bg-gray-100 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-primary-500 md:dark:hover:bg-transparent md:dark:hover:text-white"
+                >Log in</a
               >
             </li>
           </ul>
@@ -133,6 +137,109 @@
     <!-- End of Navigation bar -->
 
     <div class="w-full">{% block content %} {% endblock content %}</div>
+
+    <!-- Footer -->
+
+    <footer class="bg-white p-8 dark:bg-gray-800 md:p-16 lg:pt-20 lg:pb-12">
+      <div class="mx-auto max-w-screen-xl text-center">
+        <a
+          href="#"
+          class="flex items-center justify-center text-2xl font-semibold text-gray-900 dark:text-white">
+          <svg
+            class="mr-2 h-9 text-primary-500"
+            width="45"
+            height="52"
+            viewBox="0 0 45 52"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M24.4646 19.5889L8.39242 36.7681C4.68757 40.7281 3.36594 46.3585 4.92183 51.5534C4.98622 51.7684 5.18406 51.9156 5.4085 51.9156H7.29697C7.45223 51.9156 7.59453 51.8291 7.66591 51.6912C9.53731 48.0761 12.4297 45.0906 15.9836 43.1055L24.3488 38.433C24.6512 38.2641 25.0166 38.5131 24.97 38.8563L24.9479 39.0195C24.3549 43.3933 25.1885 47.8417 27.3251 51.704C27.3973 51.8346 27.5348 51.9156 27.6841 51.9156H29.5392C29.8287 51.9156 30.0635 51.6809 30.0635 51.3914V30.6684C30.0635 26.618 28.6168 22.7008 25.9841 19.6228C25.589 19.1608 24.88 19.145 24.4646 19.5889Z"
+              fill="currentColor" />
+            <path
+              d="M36.4394 51.9157H38.9758C39.2653 51.9157 39.5 51.681 39.5 51.3914V25.2154C39.5 24.7323 39.1698 24.3116 38.7005 24.1969L38.2437 24.0853C37.7721 23.97 37.2831 24.1935 37.0617 24.6255L35.2286 28.2017C32.0385 34.4255 31.7742 41.744 34.5072 48.1817L35.9568 51.5963C36.039 51.7899 36.229 51.9157 36.4394 51.9157Z"
+              fill="currentColor" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M11.8 0.735349C11.9466 0.391943 12.3951 0.307545 12.6565 0.574152L14.9556 2.91876C18.0735 6.09842 19.5769 10.2829 19.4457 14.4316C19.3315 18.0444 17.9777 21.6301 15.3711 24.5015L7.78268 32.8608L3.54584 38.3549C3.36503 38.5893 3.01449 38.5986 2.82152 38.3741C-0.0789258 34.9987 -0.809199 30.2684 0.938284 26.1755L11.8 0.735349ZM11.0549 10.4913L13.1474 5.59037C14.713 7.35597 15.6968 9.4543 16.0994 11.6428C16.1675 12.0127 16.2008 12.397 16.2018 12.7959C15.8105 12.5523 15.345 12.3539 14.797 12.2542C13.635 12.0429 12.6023 12.3418 11.9647 12.5824C11.2791 12.8412 10.631 13.1984 10.1075 13.5084C10.0761 13.527 10.0444 13.5459 10.0125 13.5649C10.2393 12.5752 10.5995 11.558 11.0549 10.4913Z"
+              fill="currentColor" />
+            <path
+              d="M36.4163 5.11421C37.472 2.96934 39.4509 1.42524 41.7881 0.922649C42.0559 0.865049 42.2954 1.10023 42.2426 1.36908L40.3667 10.9193C40.3 11.2589 39.8607 11.3562 39.6568 11.0765C38.8006 9.90197 37.6967 8.92996 36.4233 8.22929L35.6501 7.80389C35.4046 7.66879 35.3087 7.36449 35.4325 7.11305L36.4163 5.11421Z"
+              fill="currentColor" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M34.3928 0.110343C29.3657 1.78604 25.9116 6.41212 25.7332 11.7081L25.7057 12.5249C25.5921 15.8971 27.7781 18.9177 31.0168 19.8638L40.0098 22.491C41.5079 22.9287 43.1131 22.3035 43.9206 20.9679C44.184 20.5322 44.0713 19.9675 43.6609 19.6662L40.8144 17.5771L39.6818 14.6089C38.5854 11.7356 36.3513 9.4425 33.5075 8.27155L34.9417 0.588691C35.0008 0.27216 34.6983 0.00851835 34.3928 0.110343ZM33.3849 14.3253C33.2592 14.3903 33.177 14.5166 33.1686 14.6579C33.113 15.5925 33.5867 16.5201 34.4617 17.001C35.221 17.4183 36.1021 17.4002 36.818 17.0302C36.9437 16.9653 37.0259 16.8389 37.0343 16.6976C37.0899 15.7631 36.6162 14.8354 35.7412 14.3545C34.982 13.9372 34.1008 13.9553 33.3849 14.3253Z"
+              fill="currentColor" />
+          </svg>
+          Raposa
+        </a>
+        <p class="my-6 text-gray-500 dark:text-gray-400">
+          Trend Following Automation for Professionals. With no Code.
+        </p>
+        <ul
+          class="mb-12 flex flex-wrap items-center justify-center font-medium text-gray-800 dark:text-white">
+          <li>
+            <a
+              href="#"
+              class="mr-4 transition-colors duration-300 ease-in-out hover:text-primary-500 md:mr-6"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="mr-4 transition-colors duration-300 ease-in-out hover:text-primary-500 md:mr-6"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="mr-4 transition-colors duration-300 ease-in-out hover:text-primary-500 md:mr-6"
+              >Tutorials</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="mr-4 transition-colors duration-300 ease-in-out hover:text-primary-500 md:mr-6"
+              >Strategy Builder</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="mr-4 transition-colors duration-300 ease-in-out hover:text-primary-500 md:mr-6"
+              >Sign up</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="mr-4 transition-colors duration-300 ease-in-out hover:text-primary-500 md:mr-6"
+              >Log in</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="mr-4 transition-colors duration-300 ease-in-out hover:text-primary-500 md:mr-6"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <p class="text-sm text-gray-500 dark:text-gray-400 sm:text-center">
+          © 2020-
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Raposa. All Rights Reserved. | <a>TOS & Disclaimer</a> |
+          Privacy
+        </p>
+      </div>
+    </footer>
 
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
   </body>
