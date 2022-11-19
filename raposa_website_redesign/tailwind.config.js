@@ -1,3 +1,5 @@
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -60,6 +62,10 @@ module.exports = {
     },
     backgroundImage: {
       'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+    },
+    fontFamily:{
+      'sans': ['Switzer', ...fontFamily.sans],
+      'serif': ['Larken', ...fontFamily.sans]
     },
     keyframes: {
         'gradient-y': {

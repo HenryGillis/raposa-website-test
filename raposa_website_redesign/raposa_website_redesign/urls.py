@@ -17,9 +17,16 @@ from django.contrib import admin
 from django.urls import path
 from .views import index
 from .views import pricing
+from .views import contact
+from .views import terms
+from .views import privacy_policy
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
     path('pricing/', pricing, name='pricing'),
+    path('contact/', contact, name='contact'),
+    path('terms/', terms, name='terms'),
+    path('privacy_policy/', privacy_policy, name='privacy_policy'),
 ]
