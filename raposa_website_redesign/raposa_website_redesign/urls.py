@@ -30,3 +30,4 @@ urlpatterns = [
     path('terms/', terms, name='terms'),
     path('privacy_policy/', privacy_policy, name='privacy_policy'),
 ]
+
